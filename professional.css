@@ -278,7 +278,7 @@ footer{
 @keyframes slideDown {
 	0% {
 		opacity: 0;
-		transform: translateY(-250px);
+		transform: translateY(-150px);
 	}
 
 	100% {
