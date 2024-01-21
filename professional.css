@@ -1,0 +1,651 @@
+*{
+  font-family: Raleway;
+  color: white;
+}
+
+header{
+  height: 37rem;
+  background-image: url(./assets/box-header.webp);
+}
+
+.header-box{
+  width: 50%;
+}
+
+.mask{
+  background: #0000009c;
+}
+
+.header-box h1{
+  font-size: 3.5rem;
+}
+
+.header-box h2{
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.we-do{
+  height: 35rem;
+}
+
+.we-do-text{
+  background: #8B4513;
+  width: 60%;
+  z-index: 2;
+  border-radius: 0 35% 35% 0;
+}
+
+.we-do-img{
+  background: url(./assets/bg-carstack.webp);
+  width: 70%;
+  z-index: 1;
+}
+
+.we-do-text h3{
+  font-size: 3.25rem;
+}
+
+.we-do-text h4{
+  font-size: 2rem;
+}
+
+.we-svg{
+  background: #512505;
+  height: 7rem;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+
+.divider{
+  background: #8B4513;
+  height: 10rem
+}
+
+.about{
+  height: 30rem
+}
+
+.about-img{
+  background: url(./assets/box-storage.webp);
+  background-size: cover;
+  width: 50%;
+  z-index: 1;
+}
+
+.about-text{
+  background: #8B4513;
+  width: 50%;
+  z-index: 2;
+}
+
+.about-box h3{
+  font-size: 3.75rem;
+}
+
+.about-box h4{
+  line-height: 1.5;
+}
+
+.about-box{
+  display: flex;
+}
+
+.about-text-sm{
+  display: none;
+  width: 95%;
+  height: 95%;
+}
+
+.example{
+  background: #8B4513;
+  height: 30rem ;
+}
+
+.example-title{
+  font-size: 3rem ;
+}
+
+.example h4{
+  font-size: 1.75rem;
+}
+
+.example-container{
+  width: 15rem ;
+}
+
+.example-img-container{
+  aspect-ratio: 1/1 ;
+}
+
+.ads{
+  height: 60rem ;
+  background: #8B4513;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.ads-text {
+  height: auto;
+  width: 80%;
+}
+
+.ads-text h3{
+  font-size: 3.5rem;
+}
+
+.ads-text button{
+  font-size: 1.5rem;
+}
+
+.ads-img-container{
+  background: #D0712C;
+  height: 50% ;
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0% ;
+}
+
+.ads-img{
+  bottom: 0;
+  width: 45rem;
+}
+
+footer{
+  height: 28rem;
+  background: #d0712c;
+}
+
+.main-office{
+  padding-right: 5rem;
+}
+
+.contact-us{
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+.footer-column1 , .footer-column2{
+  width: 50%;
+  height: 100%;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-left-animation{
+    animation: fadeInLeft 1s ease-in 0s 1 normal forwards;
+  }
+
+  .slide-right-animation{
+    animation: slideInRight 2s ease 0s 1 normal forwards;
+  }
+
+  .slide-left-animation{
+    animation: slideInLeft 1s ease 0s 1 normal forwards;
+  }
+
+  .fade-center-animation-fast{
+    animation: fadeCenter 1s ease-in 0s 1 normal forwards;
+  }
+
+  .fade-center-animation{
+    animation: fadeCenter 2s ease-in 0s 1 normal forwards;
+  }
+
+  .fade-center-animation-slow{
+    animation: fadeCenter 3s ease-in 0s 1 normal forwards;
+  }
+
+  .fade-up-animation{
+    animation: fadeUp 1s ease-in 0s 1 normal forwards;
+  }
+
+  .slide-up-animation{
+    animation: slideUp 1s ease-out 0s 1 normal forwards;
+  }
+
+  .slide-down-animation{
+    animation: slideDown 1s ease-out 0s 1 normal forwards;
+  }
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		transform: translateX(100px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeUp {
+  0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+@media (max-width: 1200px) {
+
+  header {
+    height: 42rem;
+  }
+
+  .header-box{
+    width: 60%;
+  }
+
+  .about-box h3{
+    font-size: 3.25rem;
+  }
+
+  .about-box h4{
+    font-size: 1.5rem;
+  }
+
+  .ads-text h3 {
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .header-box {
+    width: 70%;
+  }
+
+  .header-box h1 {
+    font-size: 3rem;
+  }
+
+  .we-do {
+    height: 30rem;
+  }
+
+  .we-do-text h3{
+    font-size: 2.75rem;
+  }
+
+  .we-svg{
+    height: 6rem;
+  }
+
+  .about-box h3 {
+    font-size: 2.5rem;
+  }
+
+  .about-box h4{
+    font-size: 1.25rem;
+  }
+
+  .about-text-sm h3 {
+    font-size: 2.5rem;
+  }
+
+  .example-title {
+    font-size: 2.5rem;
+  }
+
+  .example-container {
+    width: 13rem;
+  }
+
+  .example h4 {
+    font-size: 1.5rem;
+  }
+
+  .ads{
+    height: 50rem;
+  }
+
+  .ads-text h3 {
+    font-size: 2.5rem;
+  }
+
+  .ads-text button {
+    font-size: 1.25rem;
+  }
+
+  .ads-img {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: 35rem;
+  }
+
+  .header-box {
+    width: 90%;
+  }
+
+  .header-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .we-do {
+    height: 25rem;
+  }
+
+  .we-do-text{
+    width: 65%;
+  }
+
+  .we-do-text h3 {
+    font-size: 2.5rem;
+  }
+
+  .we-do-text h4 {
+    font-size: 1.75rem;
+  }
+
+  .divider {
+    height: 7rem;
+  }
+
+  .about-text{
+    display: none;
+  }
+
+  .about , .about-text-sm{
+    display: flex;
+  }
+
+  .about{
+    width: 100%;
+    background: saddlebrown;
+  }
+
+  .about-text-sm{
+    background: #ffffff38;
+  }
+
+  .about-text-sm h3 {
+    font-size: 2rem;
+  }
+
+  .about-text-sm h4{
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .about-img{
+    width: 95%;
+  }
+
+  .example {
+    height: 25rem;
+  }
+
+  .example-title {
+    font-size: 2.25rem;
+  }
+
+  .example-container {
+    width: 10rem;
+  }
+
+  .ads-img{
+    width: 35rem;
+  }
+
+  .ads-text h3 {
+    font-size: 2rem;
+  }
+
+  .ads-text button {
+    font-size: 1.15rem;
+  }
+
+  footer{
+    height: 42rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column1 {
+    width: 90%;
+    height: 15%;
+  }
+
+  .footer-column2{
+    width: 90%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 568px) {
+
+  header {
+    height: 25rem;
+  }
+
+  .header-box {
+    width: 96%;
+  }
+
+  .header-box h1 {
+    font-size: 2rem;
+  }
+
+  .header-box h2 {
+    font-size: 1rem;
+  }
+
+  .header-span1{
+    display: none;
+  }
+
+  .we-svg {
+    height: 5rem;
+  }
+
+  .we-do-text h3 {
+    font-size: 2rem;
+  }
+
+  .we-do-text h4 {
+    font-size: 1.45rem;
+  }
+
+  .example {
+    height: 28rem;
+  }
+
+  .example-title {
+    font-size: 1.75rem;
+  }
+
+  .example-container {
+    width: 8rem;
+  }
+
+  .example h4 {
+    font-size: 1.25rem;
+  }
+
+  .ads{
+    height: 35rem;
+  }
+
+  .ads-text {
+    width: 95%;
+  }
+
+  .ads-text h3 {
+    font-size: 1.75rem;
+  }
+
+  .ads-img {
+    width: 27rem;
+  }
+
+  footer{
+    height: 35rem;
+  }
+
+  .contact-us {
+    font-size: 2.75rem;
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 410px) {
+
+  .header-box h1 {
+    font-size: 1.75rem;
+  }
+
+  .header-box button{
+    font-size: 0.95rem !important;
+  }
+
+  .we-do-text {
+    width: 70%;
+  }
+
+  .we-svg {
+    height: 4rem;
+  }
+
+  .we-do-text h4 {
+    font-size: 1.75rem;
+  }
+
+  .we-do-text h4 {
+    font-size: 1.25rem;
+  }
+
+  .about-text-sm h3 {
+    font-size: 2rem;
+  }
+
+  .about-text-sm h4 {
+    font-size: 1.1rem;
+  }
+
+  .example {
+    height: 22rem;
+  }
+
+  .example-container {
+    width: 6.5rem;
+  }
+
+  .example h4 {
+    font-size: 1.1rem;
+  }
+
+  .ads-text {
+    width: 98%;
+  }
+
+  .ads-text h3 {
+    font-size: 1.35rem;
+  }
+
+  .ads-text button {
+    font-size: 1rem;
+  }
+
+  .ads-img {
+    width: 25rem;
+  }
+
+  footer{
+    height: 34rem;
+  }
+
+  .contact-us {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .main-office {
+    padding-right: 2rem;
+  }
+
+ .footer-column2 {
+    width: 90%;
+    height: 90%;
+  }
+
+  .footer-row-1 h3{
+   font-size: 1.5rem;
+  }
+
+  .footer-row-1 h4{
+   font-size: 1rem;
+  }
+
+ }
